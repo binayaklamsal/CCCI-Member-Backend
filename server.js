@@ -93,7 +93,7 @@ app.get("/api/show/data", async (req, res) => {
 });
 
 // Get payment data by ID
-app.get("/api/payment/:id", async (req, res) => {
+app.get("/api/show/data/payment/:id", async (req, res) => {
   try {
     const { id } = req.params;
     
@@ -343,7 +343,7 @@ app.listen(PORT, () => {
   console.log(`✅ Server running on port ${PORT}`);
   console.log(`🔗 Health check: http://localhost:${PORT}/health`);
   console.log(`🔗 Show data API: http://localhost:${PORT}/api/show/data`);
-  console.log(`🔗 Payment API: http://localhost:${PORT}/api/payment/{id}`);
+  console.log(`🔗 Payment API: http://localhost:${PORT}/api/show/data/payment/{id}`);
   console.log(`🔗 Test connection: http://localhost:${PORT}/api/test-connection`);
   console.log('\n📚 Available endpoints:');
   console.log('   GET  /health');
