@@ -320,9 +320,9 @@ app.use((req, res) => {
     availableEndpoints: [
       "GET /health",
       "GET /api/show/data",
-      "GET /api/payment/:id",
+      "GET /api/show/data/payment/:id",
       "POST /api/payment",
-      "PUT /api/payment/:id",
+      "PUT /api/show/data/payment/:id",
       "DELETE /api/payment/:id",
       "GET /api/test-connection"
     ]
